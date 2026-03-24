@@ -4,10 +4,19 @@
   "packageManager": "pnpm@10.26.1",
   "scripts": {
     "lint": "pnpm -r run lint",
-    "lint:fix": "pnpm -r run lint:fix"
+    "lint:fix": "pnpm -r run lint:fix",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,mjs}": [
+      "prettier --check",
+      "eslint"
+    ]
   },
   "devDependencies": {
     "eslint": "catalog:",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
     "prettier": "catalog:"
   }
 }
