@@ -1,4 +1,4 @@
 {
   "title": "技術的負債",
-  "pages": ["index", "documentation"]
+  "pages": ["index", "documentation", "task-management", "meeting-notes", "infrastructure", "app-architecture", "deployment", "backup"]
 }
