@@ -9,8 +9,10 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,mjs}": [
-      "prettier --check",
-      "eslint"
+      "prettier --check"
+    ],
+    "apps/docs/**/*.{js,jsx,ts,tsx,mjs}": [
+      "pnpm --filter docs exec eslint"
     ]
   },
   "devDependencies": {
