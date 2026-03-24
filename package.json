@@ -1,0 +1,13 @@
+{
+  "name": "dac-repo",
+  "private": true,
+  "packageManager": "pnpm@10.26.1",
+  "scripts": {
+    "lint": "pnpm -r run lint",
+    "lint:fix": "pnpm -r run lint:fix"
+  },
+  "devDependencies": {
+    "eslint": "catalog:",
+    "prettier": "catalog:"
+  }
+}
