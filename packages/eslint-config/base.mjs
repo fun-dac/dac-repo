@@ -12,8 +12,7 @@ const baseConfig = [
         'error',
         {
           selector: 'FunctionDeclaration',
-          message:
-            '関数はアロー関数で定義してください。',
+          message: '関数はアロー関数で定義してください。',
         },
       ],
       'no-restricted-exports': [

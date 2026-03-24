@@ -4,6 +4,7 @@ build/
 out/
 
 .next/
+.source/
 .turbo/
 
 *.tsbuildinfo
