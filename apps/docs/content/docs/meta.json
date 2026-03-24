@@ -1,4 +1,4 @@
 {
   "title": "Docs",
-  "pages": ["---", "what-is-digital-archive", "project-charter"]
+  "pages": ["---", "what-is-digital-archive", "project-charter", "tech-debt"]
 }
