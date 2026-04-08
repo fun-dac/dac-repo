@@ -13,6 +13,9 @@
     ],
     "apps/docs/**/*.{js,jsx,ts,tsx,mjs}": [
       "pnpm --filter docs exec eslint"
+    ],
+    "apps/playground/**/*.{js,jsx,ts,tsx,mjs}": [
+      "pnpm --filter playground exec eslint"
     ]
   },
   "devDependencies": {
