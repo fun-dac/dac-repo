@@ -16,6 +16,9 @@
     ],
     "apps/playground/**/*.{js,jsx,ts,tsx,mjs}": [
       "pnpm --filter playground exec eslint"
+    ],
+    "apps/iiif-server/**/*.{js,jsx,ts,tsx,mjs}": [
+      "pnpm --filter iiif-server exec eslint"
     ]
   },
   "devDependencies": {

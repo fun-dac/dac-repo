@@ -1,12 +1,14 @@
 import prettierConfig from 'eslint-config-prettier';
+import importPlugin from 'eslint-plugin-import-x';
 import tseslint from 'typescript-eslint';
 
-// NOTE: import プラグインは eslint-config-next が提供するため、ここでは登録しない
-// import/order ルールは next config と併用することで動作する
 const baseConfig = [
   tseslint.configs.base,
   {
     files: ['**/*.{js,jsx,ts,tsx,mjs}'],
+    plugins: {
+      'import-x': importPlugin,
+    },
     rules: {
       'no-restricted-syntax': [
         'error',
@@ -46,7 +48,7 @@ const baseConfig = [
           ],
         },
       ],
-      'import/order': [
+      'import-x/order': [
         'error',
         {
           groups: [
@@ -61,6 +63,12 @@ const baseConfig = [
           alphabetize: { order: 'asc', caseInsensitive: true },
         },
       ],
+    },
+  },
+  {
+    files: ['*.config.{js,mjs,ts}'],
+    rules: {
+      'no-restricted-exports': 'off',
     },
   },
   prettierConfig,

@@ -6,6 +6,12 @@ const nextConfig = defineConfig([
   ...nextVitals,
   ...nextTs,
   {
+    // NOTE: import/order は base config の import-x/order で統一するため無効化する
+    rules: {
+      'import/order': 'off',
+    },
+  },
+  {
     files: [
       '**/page.tsx',
       '**/layout.tsx',
@@ -13,7 +19,6 @@ const nextConfig = defineConfig([
       '**/error.tsx',
       '**/not-found.tsx',
       '**/template.tsx',
-      '*.config.{js,mjs,ts}',
     ],
     rules: {
       'no-restricted-exports': 'off',
