@@ -1,1 +1,4 @@
 @import 'tailwindcss';
+/* NOTE: Tailwind CSS 4 はデフォルトでアプリ内のファイルのみスキャンするため、
+   モノレポの共有パッケージで使用しているクラスを検出するには明示的に @source で追加する必要がある */
+@source '../../../packages/ui/src/**/*.tsx';

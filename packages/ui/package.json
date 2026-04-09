@@ -1,0 +1,17 @@
+{
+  "name": "@repo/ui",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./iiif-viewer": "./src/iiif-viewer.tsx"
+  },
+  "dependencies": {
+    "lucide-react": "^0.511.0",
+    "openseadragon": "^6.0.2"
+  },
+  "peerDependencies": {
+    "react": "^19",
+    "react-dom": "^19"
+  }
+}

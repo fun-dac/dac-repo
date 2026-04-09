@@ -10,6 +10,7 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "@repo/ui": "workspace:*",
     "next": "^16.2.2",
     "react": "catalog:",
     "react-dom": "catalog:"
