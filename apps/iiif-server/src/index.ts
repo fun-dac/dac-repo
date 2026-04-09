@@ -2,6 +2,7 @@ import { createReadStream } from 'fs';
 
 import { serve } from '@hono/node-server';
 import { Hono } from 'hono';
+import { cors } from 'hono/cors';
 import { IIIFError, Processor } from 'iiif-processor';
 
 // NOTE: 仮のソース画像ディレクトリ。将来的にはストレージ抽象化に置き換える
@@ -12,6 +13,8 @@ const streamResolver = async ({ id }: { id: string }) => {
 };
 
 const app = new Hono();
+
+app.use(cors());
 
 app.get('/iiif/:version{[23]}/*', async (c) => {
   const processor = new Processor(c.req.url, streamResolver, {
